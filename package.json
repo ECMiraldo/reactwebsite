@@ -1,5 +1,17 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
+
+  "homepage": "https://ECMiraldo.github.io",
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   }
 }
