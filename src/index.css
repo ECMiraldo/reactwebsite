@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+    margin: 0p;
+    padding: 0p;
+    border: 0p;
+    outline: 0p;
+    color: var(--color-texts);
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+    --primary-hue: 260;
+    --grey-hue: 240;
+    --color-darker: #170C29;
+    --color-dark: #352F44;
+    --color-primary: #5C5470;
+    --color-light: #B9B4C7;
+    --color-texts: #FAF0E6;
+    --color-titles: #FBCB9B;
 }
+
+body {
+    background: var(--color-dark);
+}
+
+nav {
+    height: 5rem;
+    width: 100vw;
+    background: var(--color-darker);
+    display: grid;
+    position: fixed;
+    justify-content: flex-end; /* Align items to the left */
+    align-items: center; /* Vertically center items */
+    top: 0;
+    right: 0;
+    z-index: 90;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically center content */
+    height: 5rem;
+    width: 100vw;
+    box-shadow: 1px 1px;
+    background-color: var(--color-terciary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+    text-align: center;
+    padding-right: 25px;
+    color: var(--color-texts);
+    margin-right: 12.5vw; /* Add margin on the right side */
+}
+
+.nav_links a:hover {
+    color: var(--color-titles);
+}
+
+.nav_logo {
+    color: var(--color-texts);
+    padding-left: 12.5vw; /* Add padding on the left side */
+    font-weight: bold;
+}
+
+
