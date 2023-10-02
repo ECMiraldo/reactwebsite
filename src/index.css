@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
 *, *::before, *::after {
     margin: 0p;
     padding: 0p;
@@ -61,9 +66,9 @@ nav {
     display: flex;
     gap: 3.5rem;
     text-align: center;
-    padding-right: 25px;
+    padding-right: 15px;
     color: var(--color-texts);
-    margin-right: 12.5vw; /* Add margin on the right side */
+    margin-right: 11vw; /* Add margin on the right side */
 }
 
 .nav_links a:hover {
@@ -72,7 +77,7 @@ nav {
 
 .nav_logo {
     color: var(--color-texts);
-    padding-left: 12.5vw; /* Add padding on the left side */
+    padding-left: 11vw; /* Add padding on the left side */
     font-weight: bold;
 }
 

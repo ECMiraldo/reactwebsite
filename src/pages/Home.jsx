@@ -23,12 +23,13 @@ const Home = () => {
 
   return (
     <>
-      <div className='w-4/5 pt-20 m-auto'>
-        <div className='w-full flex justify-center items-center m-auto'>
-          <img src={gif} className='w-full' alt='loading...' />
+     <section id='Home'>
+        <div className='w-4/5 pt-20 m-auto'>
+          <div className='w-full flex justify-center items-center m-auto'>
+            <img src={gif} className='w-full' alt='loading...' />
+          </div>
         </div>
-      </div>
-
+      </section>
       <section id='About'>
         <About />
       </section>

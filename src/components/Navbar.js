@@ -25,15 +25,15 @@ const Navbar = () => {
   return (
     <nav>
       <div className='nav_container'>
-        <div className='nav_logo' onClick={scrollToTop}>
+        <div className='font-montserrat nav_logo' onClick={scrollToTop}>
           Eduardo Cacciari Miraldo
         </div>
-        <ul className='nav_links'>
+        <ul className='font-montserrat nav_links'>
           <li>
             {/* Use Link from React Scroll for smooth scrolling to "About" section */}
-            <Link to="About" smooth={true} duration={500} onClick={() => handleNavLinkClick('About')}>
+            <Link to="Home  " smooth={true} duration={500} onClick={() => handleNavLinkClick('Home')}>
             
-              About
+              Home
             </Link>
           </li>
           <li>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </li>
           <li>
             {/* Use React Router Link to navigate to a different component */}
-            <RouterLink to="/resume">Resume</RouterLink>
+            <RouterLink to="/resume">Resume/Contacts</RouterLink>
           </li>
           {/* Add more links */}
         </ul>
